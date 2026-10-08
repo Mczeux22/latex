@@ -3,9 +3,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{amsthm}
 \title{Mathématique discrètes}
 \author{Loic Papon}
 \date{8/10/2026}
+\newtheorem{theorem}{théorème}
 
 
 \begin{document}
@@ -14,5 +16,30 @@
 \newpage
 \tableofcontents
 \newpage
+
+\begin{theorem}
+Pour tout entier naturel n, la somme des n premiers entiers
+naturels est égal à la moitié du produit de n par (n - 1).
+\end{theorem}
+
+Soit $ n\in\mathbb { N } $ .
+Notons $ S_n $ la somme des $ n $ premiers entiers naturels .
+Alors :
+S_n & = \sum_ { i = 0 } ^ { n - 1 } i
+= 0 + 1 + \cdots + ( n - 2) + ( n - 1)
+& \text { par d é finition } \\
+& = \sum_ { i = 0 } ^ { n - 1 } ( n - 1 - i )
+= ( n - 1) + ( n - 2) + \cdots + 1 + 0
+& \text { par commutativit é } \\
+En sommant les deux formes de la somme $ S_n $ donn é es ci - dessus,
+nous pouvons obtenir :
+2 \times S_n
+& = \left ( \sum_ { i = 0 } ^ { n - 1 } i\right )
++ \left ( \sum_ { i = 0 } ^ { n - 1 } ( n - 1 - i ) \right ) \\
+& = \sum_ { i = 0 } ^ { n - 1 } ( i + ( n - 1 - i ))
+& \text { par associativit é et commutativit é } \\
+& = \text { \emph { \ldots < compl é tez la preuve ici > \ldots } }
+\end { align * }
+\emph { \ldots < concluez la preuve ici > \ldots }
 
 \end{document}
