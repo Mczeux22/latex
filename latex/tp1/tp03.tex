@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}   % Pour les environnements d'équations et \text
+\usepackage{mathtools} % Pour mathtools (equation*)
+\usepackage{amssymb}   % Pour les symboles avancés (\nleq, \ngeq, etc.)
+
+\begin{document}
+
+\section{Introduction aux mathématiques en LaTeX}
+
+\subsection{Mode normal et mode math}
+Écriture en mode normal : 3-2+4=5. \\
+Écriture en mode math : $3-2+4=5$.
+
+Comparaison avec l'exposant (accent circonflecte \verb|^|) :
+En mode normal : 2^{10}=1024 (l'accent est affiché seul ou décale le texte).
+En mode math : $2^{10} = 1024$.
+
+\subsection{Indices et produits}
+Variables indicées avec le symbole \verb|_| et \ldots : 
+$a_1, a_2, \dots, a_n$.
+
+Produit des variables avec \verb|\times| et \verb|\cdots| :
+$a_1 \times a_2 \times \cdots \times a_n$.
+
+\subsection{Inégalités, relations et fonctions}
+Inégalités strictes et larges : 
+$3 < 4$, $5 > 4$, $3 \leq 4$ (\verb|\leq|) et $5 \geq 4$ (\verb|\geq|).
+
+Quantificateurs : $\exists$ (\verb|\exists|) et $\forall$ (\verb|\forall|).
+
+Relations diverses : 
+$a \neq b$ (\verb|\neq|), 
+$a \equiv b$ (\verb|\equiv|), 
+$P \iff Q$ (\verb|\iff|), 
+$x \sim y$ (\verb|\sim|), 
+$f \hookrightarrow G$ (\verb|\hookrightarrow|).
+
+Fonctions et opérateurs : 
+$\cos(x)$, $\sin(x)$, $\tan(x)$, $\lim_{x \to 0} f(x)$.
+
+Fraction et constante : 
+$\frac{a}{b}$ et l'infini $\infty$ (\verb|\infty|).
+
+Symboles avancés (paquet \texttt{amssymb}) :
+$3 \nleq 4$ (\verb|\nleq|), $3 \ngeq 4$ (\verb|\ngeq|), et $A \implies B$ (\verb|\implies|).
+
+\section{Équations sur une ligne à part}
+
+Équation non numérotée avec \texttt{equation*} :
+\begin{equation*}
+    e = mc^2
+\end{equation*}
+
+Équation numérotée avec \texttt{equation} et étiquette (\verb|\label|) :
+\begin{equation}
+    \label{eq:einstein}
+    E = mc^2
+\end{equation}
+
+Référence à l'équation précédente avec \verb|\eqref{eq:einstein}| : 
+Comme on le voit dans l'équation \eqref{eq:einstein}, l'énergie est liée à la masse. 
+(Utiliser \verb|\ref| donne simplement le numéro, tandis que \verb|\eqref| ajoute les parenthèses automatiques).
+
+\subsection{Texte et formules complexes}
+
+Formule avec du texte intégré via \verb|\text| :
+\begin{equation*}
+    \forall k < n, \text{ $k$ est un diviseur de } n!
+\end{equation*}
+
+Limite complexe avec les commandes \verb|\to|, \verb|\theta|, et \verb|\pi| :
+\begin{equation*}
+    \lim_{\theta \to \left(\frac{\pi}{2}\right)^-} \tan(\theta) = \infty
+\end{equation*}
+
+\end{document}

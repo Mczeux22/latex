@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\title{La bible de la marijuana}
+\author{Bob Marley}
+\date{6/02/1945}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Culture et séchage}
+\begin{enumerate}
+    \item L'art de la culture hydroponique
+    \begin{enumerate}
+        \item Je suis la sous-liste
+        \item \label{ref_sous_liste} Le deuxième élément de la sous-liste
+        \item sur le poisson et le pêcheur
+        \item Le poisson mange le pêcheur
+        \item Tu t'y attendais pas
+    \end{enumerate}                                                          
+    \item \label{ref_num2} Le séchage digne d'un sèche-cheveux (référence à la sous-liste : \ref{ref_sous_liste})
+    \item Une cuisson à vous faire partie du crew d'Apollo 13
+\end{enumerate}
+
+\section{Musique et ambiance}
+\begin{itemize}
+    \item L'art du beat sur les nuages (Référence au deuxième élément de la liste numérotée : \ref{ref_num2})
+    \item Quand tu clappes clappes clappes c'est ta façon d'aimer (Référence au deuxième élément de la liste numérotée : \ref{ref_num2})
+    \item Bouge ta tête et pas ton boule (Référence au deuxième élément de la liste numérotée : \ref{ref_num2})
+\end{itemize}
+
+\section{Description et détails}
+\begin{description}
+	\item[Hydroponique] Référence au deuxième élément de la sous-liste numérotée : \ref{ref_sous_liste}.
+    \item[Séchage] Référence au deuxième élément de la sous-liste numérotée : \ref{ref_sous_liste}.
+    \item[Cuisson] Référence au deuxième élément de la sous-liste numérotée : \ref{ref_sous_liste}.
+\end{description}
+
+\end{document}

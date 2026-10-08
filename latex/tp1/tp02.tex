@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section{Exercice 4 : Mathématiques et LaTeX}
+
+\subsection{Questions 1 à 6 : Bases, modes et indices}
+% Q1-Q2-Q3
+Mode normal : 3-2+4=5. \\
+Mode math : $3-2+4=5$.
+
+% Q4
+Accent circonflexe pour les exposants : en mode normal $2^{10}=1024$ (ou affiché séparément), en mode math $2^{10} = 1024$.
+
+% Q5-Q6
+Variables indicées et produits : 
+$a_1, a_2, \dots, a_n$ et $a_1 \times a_2 \times \cdots \times a_n$.
+
+\subsection{Questions 7 à 9 : Inégalités, symboles et paquets}
+% Q7-Q8
+Inégalités et relations : $3 < 4$, $5 > 4$, $3 \leq 4$, $5 \geq 4$. \\
+Quantificateurs et relations : $\exists$, $\forall$, $\neq$, $\equiv$, $\iff$, $\sim$, $\hookrightarrow$. \\
+Fonctions et fractions : $\cos(x)$, $\sin(x)$, $\tan(x)$, $\lim_{x \to 0}$, $\frac{a}{b}$, $\infty$.
+
+% Q9
+Symboles avancés (paquets amssymb / mathtools) : 
+$3 \nleq 4$, $3 \ngeq 4$, $A \implies B$.
+
+\subsection{Questions 10 à 14 : Équations en ligne à part et étiquettes}
+% Q10-Q11
+\begin{equation*}
+    e = mc^2
+\end{equation*}
+
+% Q12-Q13-Q14
+\begin{equation}
+    \label{eq:einstein}
+    E = mc^2
+\end{equation}
+Référence avec \verb|\eqref| : Comme vu dans l'équation \eqref{eq:einstein}.
+
+\subsection{Questions 15 à 18 : Texte, quantificateurs et limites complexes}
+% Q15
+\begin{equation}
+    \forall k < n, \text{ $k$ est un diviseur de } n!
+\end{equation}
+
+% Q16 : Cours-TD sur les quantificateurs (Exemple d'énoncé et solution)
+\paragraph{Énoncé (Q16) :} Démontrer que pour tout réel $x$, si $x > 2$ alors $x^2 > 4$.
+\begin{equation*}
+    \forall x \in \mathbb{R}, \quad (x > 2 \implies x^2 > 4)
+\end{equation*}
+
+% Q17
+\begin{equation}
+    \lim_{\theta \to \left(\frac{\pi}{2}\right)^-} \tan(\theta) = \infty
+\end{equation}
+
+\end{document}
